@@ -1,0 +1,135 @@
+body{
+    background-color:#FBEAEB;
+}
+
+p{
+    color: rgba(0,0,255,0.5);
+    width: 75ch;
+    text-indent: 2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1,h2{
+    color: #2f4f4f;
+}
+.ai-fashion{
+    color: green;
+}
+#arvr{
+    color: brown;
+}
+
+p span{
+    background-color: black;
+}
+
+.highlight{
+    background-color: violet;
+}
+header{
+    width: 80%;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 5px double red;
+    width: 850px;
+    font-size: 1rem;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    padding: 1em 1.5em ;
+    text-align: justify;
+    line-height: 1.5;
+}
+.container1{
+    border: 5px double red;
+    width: 850px;
+    font-size: 1rem;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    padding: 0em 0em ;
+    text-align: justify;
+    line-height: 1.5;
+
+}
+nav ul{
+    display: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.circle{
+    border: 5px solid green;
+    border-radius: 50%;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin: 2em auto ;
+    outline: 6px dashed black;
+    outline-offset: 5px;
+}
+
+a{
+    text-decoration: dashed;
+    cursor: pointer;
+    color: #2F3C7E;
+}
+
+/* a:visited{
+    color: purple;
+}
+
+a:hover{
+    color:rgba(0, 0, 255,0.5);
+} */
+
+nav ul{
+    list-style-type: none;
+    background-color: #2F3C7E;
+    text-align: right;
+    padding: 1em;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-inline: 6em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #FBEAEB;
+}
+nav ul li a:hover,nav ul li a:focus{
+    text-decoration: underline;
+}
+
+.box1{
+    background-color: #2F3C7E;
+    color:#FBEAEB;
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+}
+.left{
+    float: left;
+    margin-right: 20px;
+}
+.right{
+    float: right;
+    margin-left: 20px;
+}
+.separate-container{
+    border: 2px solid red;
+    padding: 1em;
+    display: flow-root;
+    
+}
+.clear{
+    clear: both;
+}
