@@ -69,6 +69,7 @@ h1,h2{
     background-image:url('../images/bg-1.jpg') ;
     background-position: middle;
     -webkit-background-clip: text;
+    background-clip: text;
     color: hsla(0, 0%, 0%, 0);
     text-align: center;
 }
@@ -80,7 +81,7 @@ h1,h2{
     }
     
 }
-    
+
 landscape mode
 @media screen and (max-width: 768px) and (min-aspect-ratio:7/4){
     .content{

@@ -133,3 +133,7 @@ nav ul li a:hover,nav ul li a:focus{
 .clear{
     clear: both;
 }
+
+footer span{
+  margin-left: 450px;
+}
