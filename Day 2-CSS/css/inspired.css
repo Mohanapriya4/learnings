@@ -19,13 +19,32 @@ main{
     min-height: 95vh;
     background-image: radial-gradient(white,grey);
     align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* outer box */
 .section-1{
     width: 30%;
     height: auto;
-    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 30px;
+    background-color: lightgray;
+}
+.section-2{
+    width: 30%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 30px;
+    background-color: lightgray;
+}
+.section-3{
+    width: 30%;
+    height: auto;
     border: 2px solid black;
     border-radius: 10%;
     padding: 30px;
@@ -40,6 +59,7 @@ main{
     height: auto;
     
 }
+
 
 /* p tag-names */
 .p1{
@@ -85,6 +105,10 @@ footer{
     a{
         color: black;
     }
+    .navbar ul li a:hover{
+        cursor: pointer;
+        color: rgba(0,0,0,0.5);
+    }
     /* main content */
     main{
         min-height: 100vh;
@@ -103,12 +127,94 @@ footer{
         padding: 30px;
         background-color: lightgray;
     }
+    .section-2{
+        margin-top: 50px;
+        width: 85%;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 10%;
+        padding: 30px;
+        background-color: lightgray;
+    }
+    .section-3{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 85%;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 10%;
+        padding: 30px;
+        background-color: lightgray;
+    }
     /* img */
     .img-1 img{
         border: 4px double gray;
         border-radius: 50%;
         width: 100%;
         height: 100%;
+    }
+    /* For the scroll to begin at each section correctly */
+    .section-1, .section-2, .section-3 {
+        scroll-margin-top: 110px; 
+    }
+    
+}
+
+@media screen and (max-height:376px) {
+    /* navbar */
+    .navbar ul{
+        margin-top: 57px; 
+        padding: 10px;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;      
+    }
+    a{
+        color: black;
+    }
+    /* main content */
+    main{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;  
+        align-items:center ;   
+    }
+    /* outer box */
+    .section-1{
+        margin-top: 120px;
+        width: 50%;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 10%;
+        padding: 30px;
+        background-color: lightgray;
+    }
+    .section-2{
+        margin-top: 50px;
+        width: 50%;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 10%;
+        padding: 30px;
+        background-color: lightgray;
+    }
+    .section-3{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 50%;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 10%;
+        padding: 30px;
+        background-color: lightgray;
+    }
+    .section-1, .section-2, .section-3 {
+        scroll-margin-top: 110px; 
     }
     
 }
