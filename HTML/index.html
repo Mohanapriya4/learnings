@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        My first page
+    </title>
+    <meta name="author" content="Mohanapriya">
+    <meta name="description" content="Welcome to my coding journey">
+    <link rel="icon" href="girl-image.avif">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Hello Everybody </h1>
+        <p>I'm Mohanapriya, a passionate coder who loves turning ideas into reality through technology</p>
+        <p><a href="recommend.html">recommendation</a></p>
+        <nav>
+            About me:<br>
+            <ul>
+                <li><a href="#contact">Contact Me</a></li><br>
+                <li><a href="#degree">Degree</a></li><br>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+
+        <section id="degree">Degree Completion</section>
+        <p>I Completed my bachelor's degree at <em><strong>KCG College of Technology</strong></em></p><br>
+        Specialization: Information Technology
+        <p>
+        <address>Karappakam</address>
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        <hr>
+
+        <section id="hobbies">My hobbies are:
+            <ol>
+                <li>Reading </li>
+                <li>Music </li>
+                <li>Fitness </li>
+                <li>Traveling</li>
+                <li>Gardening </li>
+                <li>Volunteering </li>
+            </ol>
+        </section>
+        <hr>
+
+        <p>Here are my inspirational women:
+        <figure>
+            <img src="images/PC.jpg" alt="Priyanka Chopra" width="400px" height="400px" title="Priyanka Chopra-PC"
+                loading="lazy">
+            <figcaption>Priyanka Chopra</figcaption>
+        </figure>
+        <figure>
+            <img src="images/Nayanthara.jpg" alt="Nayanthara" width="400px" height="400px" title="Nayanthara-N"
+                loading="lazy">
+            <figcaption>Nayanthara</figcaption>
+        </figure>
+        </p>
+        <hr>
+
+        <table>
+            <caption>My daily schedule</caption>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time headers="time-morning" datetime="08:00">8am</time> -
+                        <time datetime="12:00">12am</time>
+                    </td>
+                    <td>
+                        Write code
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Break</th>
+                    <td>
+                        <time datetime="12:00">12am</time> -
+                        <time datetime="01:00">1pm</time>
+                    </td>
+                    <td>
+                        Lunch time
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Afternoon</th>
+                    <td>
+                        <time datetime="02:00">2pm</time> -
+                        <time datetime="06:00">6pm</time>
+                    </td>
+                    <td>
+                        Study time
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Evening</th>
+                    <td rowspan="2">
+                        All other time
+                    </td>
+                    <td>
+                        Free time
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Night</th>
+                    <td>
+                        Sleep time
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        Eat,Sleep and Code Everyday
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+
+        <p>
+            I like to learn frontend which includes:
+        <dl>
+            <dt> HTML </dt>
+            <dd>-structures the content</dd>
+            <dt>CSS</dt>
+            <dd>-styles it</dd>
+            <dt>JavaScript
+            <dt>
+            <dd>- adds interactivity,</dd>
+            <dt> React</dt>
+            <dd>-efficiently manages UI components for dynamic web applications.</dd>
+        </dl>
+        </p>
+        <hr>
+
+        <p> I think in this generation it is so important for women to be taught Self love, Self growth and how to be
+            independent. So I would recomment one youtube channel- <br><em><a
+                    href="https://www.youtube.com/@AdeteDahiya">All in one</a></em></p>
+        <hr>
+        <article id="contact">
+            <h2>Contact me</h2>
+            <p>I would like you to fill this form who ever visits my website:</p>
+            <form action="https://httpbin.org/get" , method="get">
+                <fieldset>
+                    <legend>Personal details</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter your first name"
+                            autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter your last name"
+                            autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    </p>
+                    <p>
+                        <label for="phoneNo">Phone No:</label>
+                        <input type="tel" name="phoneNo" id="phoneNo" placeholder="Enter your phoneNo" required
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </p>
+                    <p>
+                        <label for="favDecade">Favourite Decade:</label>
+                        <input type="number" name="favDecade" id="favDecade" min="1980" max="2024" value="1990">
+                    </p>
+                    <p>
+                        <label for="favLanguage">Favourite Language:</label>
+                        <select name="favLanguage" id="favLanguage">
+                            <optgroup label="Frontend">
+                                <option value="html">
+                                    HTML
+                                </option>
+                                <option value="css">
+                                    CSS
+                                </option>
+                                <option value="javaScript">
+                                    JavaScript
+                                </option>
+                                <option value="react">
+                                    React
+                                </option>
+                                <option value="typescript">
+                                    Typescript
+                                </option>
+                                <option value="redux">
+                                    Redux
+                                </option>
+                            </optgroup>
+                            <optgroup label="Backend">
+                                <option value="java">
+                                    Java
+                                </option>
+                                <option value="springboot">
+                                    Springboot
+                                </option>
+                                <option value="node">
+                                    Node
+                                </option>
+                                <option value="nest">
+                                    Nest
+                                </option>
+                            </optgroup>
+                        </select>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Your fav food</legend>
+                    <p>
+                        <input type="radio" name="food" id="chicken" value="chicken">
+                        <label for="chicken">Chicken</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="mutton" value="mutton">
+                        <label for="mutton">Mutton</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="others" value="others">
+                        <label for="others">Others</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Your fav pet</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your message</label>
+                    <p>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Type your message"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            </form>
+            <br><br><br>
+
+        </article>
+        <hr>
+    </main>
+    <footer>
+        <p>
+            &lt; &lt; &lt; &lt; &copy; Mohanapriya &gt; &gt; &gt; &gt;
+        <p><a href="#">Back to top</a></p>
+        </p>
+        <hr>
+    </footer>
+    <!--HTML:
+       1.Head(title-title of page),body-contents of page
+       2.meta attributes
+       3.Icon for page
+       4.Linking css
+       5.Block elements-p tag, Inline elements-em,strong tags
+       6.line break-br, horizontal line - hr
+       7.HTML entities- 1.space-&nbsp; 2.Less than-&lt; 3.Copyright-&copy; 4.greater than-&gt; 
+       8.Add a link-anchor tags(href)
+       9.How to link 2 html pages-recommend
+       10.How to show specific content within the same page-degree,hobbies
+       11.Figure tag
+       12.Semantic tags
+       13.Table creation
+       14.Form creation
+       -->
+
+</body>
+
+</html>
