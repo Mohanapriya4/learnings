@@ -107,5 +107,69 @@ console.log("hey hi")
 
 // let var1 = prompt("Enter your name:");
 // console.log(var1 )
+//------------------------------------------------------------
+//arrays
+const arr=[];
+arr[0] = "priya";
+arr[1] = "logu";
+console.log(arr);
+arr.push("maharasi");
+console.log(arr);
+//------------------------------------------------------------
+//Objects
+const obj = {
+    name:"Mohanapriya",
+    raining : true,
+    content:{
+        earnmoney:"youtube",
+        growmoney:"stocks"
+    },
+    storage:["one","two","three"],
+    action: function(){
+        return "hello";
+    },
+    action1 : function(){
+        return `earn by growing ${this.content.earnmoney}`
+    }
+}
+console.log(obj.name);
+console.log(obj.content);
+console.log(obj.content.earnmoney);
+console.log(obj.storage);
+console.log(obj.storage[1]);  
+console.log(obj["raining"]);
+console.log(obj.action());
+console.log(obj.action1());
 
-let con=confirm("shall we play?")
+const obj1 = Object.create(obj);
+console.log(obj1);
+obj1.action1 = function(){
+   return "object1"
+}
+obj1.num = 2;
+console.log(obj1.action1());
+
+const obj2 = Object.create(obj1);
+obj2.stringg = "riya";
+console.log(obj2);
+
+const movie = {
+    actor: "Sivakarthikeyan",
+    actress: "Sai pallavi",
+    movie : "amaran"
+}
+console.log(Object.keys(movie));
+console.log(Object.values(movie));
+for(keyss in movie){
+    console.log(`${keyss} : ${movie[keyss]}`);  
+}
+console.log(movie.hasOwnProperty("actor"))
+
+
+
+
+
+
+
+
+
