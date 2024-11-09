@@ -117,53 +117,71 @@ arr.push("maharasi");
 console.log(arr);
 //------------------------------------------------------------
 //Objects
-const obj = {
-    name:"Mohanapriya",
-    raining : true,
-    content:{
-        earnmoney:"youtube",
-        growmoney:"stocks"
-    },
-    storage:["one","two","three"],
-    action: function(){
-        return "hello";
-    },
-    action1 : function(){
-        return `earn by growing ${this.content.earnmoney}`
+// const obj = {
+//     name:"Mohanapriya",
+//     raining : true,
+//     content:{
+//         earnmoney:"youtube",
+//         growmoney:"stocks"
+//     },
+//     storage:["one","two","three"],
+//     action: function(){
+//         return "hello";
+//     },
+//     action1 : function(){
+//         return `earn by growing ${this.content.earnmoney}`
+//     }
+// }
+// console.log(obj.name);
+// console.log(obj.content);
+// console.log(obj.content.earnmoney);
+// console.log(obj.storage);
+// console.log(obj.storage[1]);  
+// console.log(obj["raining"]);
+// console.log(obj.action());
+// console.log(obj.action1());
+
+// const obj1 = Object.create(obj);
+// console.log(obj1);
+// obj1.action1 = function(){
+//    return "object1"
+// }
+// obj1.num = 2;
+// console.log(obj1.action1());
+
+// const obj2 = Object.create(obj1);
+// obj2.stringg = "riya";
+// console.log(obj2);
+
+// const movie = {
+//     actor: "Sivakarthikeyan",
+//     actress: "Sai pallavi",
+//     movie : "amaran"
+// }
+// console.log(Object.keys(movie));
+// console.log(Object.values(movie));
+// for(keyss in movie){
+//     console.log(`${keyss} : ${movie[keyss]}`);  
+// }
+// console.log(movie.hasOwnProperty("actor"))
+//------------------------------------------------------------
+//JSON
+const objectt = {
+    name: "priya",
+    numbr: 9087655,
+    sub: function(){
+        return "maths is my fav subj";
     }
 }
-console.log(obj.name);
-console.log(obj.content);
-console.log(obj.content.earnmoney);
-console.log(obj.storage);
-console.log(obj.storage[1]);  
-console.log(obj["raining"]);
-console.log(obj.action());
-console.log(obj.action1());
+console.log(objectt);
+const json = JSON.stringify(objectt);
+console.log(json);
+const json1 = JSON.parse(json);
+console.log(json1);
 
-const obj1 = Object.create(obj);
-console.log(obj1);
-obj1.action1 = function(){
-   return "object1"
-}
-obj1.num = 2;
-console.log(obj1.action1());
 
-const obj2 = Object.create(obj1);
-obj2.stringg = "riya";
-console.log(obj2);
 
-const movie = {
-    actor: "Sivakarthikeyan",
-    actress: "Sai pallavi",
-    movie : "amaran"
-}
-console.log(Object.keys(movie));
-console.log(Object.values(movie));
-for(keyss in movie){
-    console.log(`${keyss} : ${movie[keyss]}`);  
-}
-console.log(movie.hasOwnProperty("actor"))
+
 
 
 
