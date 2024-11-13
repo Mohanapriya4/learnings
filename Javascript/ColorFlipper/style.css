@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    background-color: wheat;
+    opacity:rgba(255,255,255,0.5);
+    padding: 1em;
+}
+li{
+    text-align: right;
+    list-style-type:none;
+    display:inline-block;
+    margin-inline: 19em;
+}
+
+.text{
+    display: inline-block;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-size: 2em;
+    background-color: black;
+    color: white;
+   
+    
+}
+.btn{
+   position: absolute;
+   top:48%;
+   left: 45%;
+   padding: 20px ;     
+   font-size: 18px;         
+   cursor: pointer;
+
+}
+
