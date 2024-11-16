@@ -1,16 +1,53 @@
 import React from 'react'
 import { useState } from 'react'
+import { FaTrashAlt } from "react-icons/fa";
 const Content = () => {
-  const[name,setName]=useState("Earn")
-  function handleNameChange(){
-    const nameContent = ["Earn","Grow", "Give"]
-    const int = Math.floor(Math.random()*3)
-    setName(nameContent[int])
+  const [items,setItems]=useState(
+    [
+      {
+        id:1,
+        checked:true,
+        item:"Playing cricket"
+      },
+      {
+        id:2,
+        checked:false,
+        item:"Playing chess"
+      },
+      {
+        id:3,
+        checked:false,
+        item:"Playing tabletennis"
+      }
+    ]
+  )
+  const handleCheckbox=(id)=>{
+    const newItemsArray = items.map((itemsparam)=>
+    itemsparam.id===id?
+    {...itemsparam,checked:!itemsparam.checked}:itemsparam)
+    setItems(newItemsArray)
+    console.log(id);
   }
+  
   return (
       <main>
-        <p>Let's {name} Money</p>
-        <button onClick={handleNameChange}>Subscribe</button>      
+        <ul>
+        {items.map((items1)=>(
+          <li className="item" key={items1.id}>
+            <input 
+            type="checkbox"
+            onChange={()=>handleCheckbox(items1.id)}
+            checked={items1.checked}
+            />
+            <label>{items1.item}</label>
+            <FaTrashAlt 
+            role='button'
+            tabIndex={0}
+            />
+          </li>
+        ))}
+        </ul>
+        
       </main>
   )
 }
@@ -40,7 +77,7 @@ export default Content
 // }
 // export default Content
 //-----------------------------------------------------------------------------------------
-//UseState:
+//UseState example-1:
 // import React from 'react'
 // import { useState } from 'react'
 // const Content = () => {
@@ -56,6 +93,25 @@ export default Content
 //          <button onClick={handleIncrement}>+</button>
 //          <p>{count}</p>
 //          <button onClick={handleDecrement}>-</button>
+//       </main>
+//   )
+// }
+// export default Content
+//----------------------------------------------------------------------------------------
+//UseState example-2
+// import React from 'react'
+// import { useState } from 'react'
+// const Content = () => {
+//   const[name,setName]=useState("Earn")
+//   function handleNameChange(){
+//     const nameContent = ["Earn","Grow", "Give"]
+//     const int = Math.floor(Math.random()*3)
+//     setName(nameContent[int])
+//   }
+//   return (
+//       <main>
+//         <p>Let's {name} Money</p>
+//         <button onClick={handleNameChange}>Subscribe</button>      
 //       </main>
 //   )
 // }

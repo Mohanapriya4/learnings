@@ -58,7 +58,7 @@ footer {
   display: grid;
   place-content: center;
 }
-/* 
+
 ul {
   width: 100%;
   list-style: none;
@@ -183,4 +183,4 @@ button:hover {
   padding: 0.25rem;
   border-radius: 0.25rem;
   outline: none;
-} */
+}
