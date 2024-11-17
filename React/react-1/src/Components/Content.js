@@ -28,9 +28,19 @@ const Content = () => {
     setItems(newItemsArray)
     console.log(id);
   }
+  const handleDelete=(id)=>{
+    const newDeleteArray = items.filter((itemsparam1)=>(itemsparam1.id!==id))
+    setItems(newDeleteArray)
+  }
+  const handleDoubleTick=(id)=>{
+    const doubleClickTick = items.map((itemsparam2)=>
+      (itemsparam2.id===id?{...itemsparam2,checked:!itemsparam2.checked}:itemsparam2))
+    setItems(doubleClickTick)
+  }
   
   return (
       <main>
+        {(items.length)?(
         <ul>
         {items.map((items1)=>(
           <li className="item" key={items1.id}>
@@ -39,15 +49,23 @@ const Content = () => {
             onChange={()=>handleCheckbox(items1.id)}
             checked={items1.checked}
             />
-            <label>{items1.item}</label>
+            <label 
+            onDoubleClick={()=>handleDoubleTick(items1.id)}
+            style={(items1.checked)?{textDecoration:'line-through'}:null}
+            >
+              {items1.item}
+            </label>
             <FaTrashAlt 
             role='button'
             tabIndex={0}
+            onClick={()=>handleDelete(items1.id)}
             />
           </li>
         ))}
         </ul>
-        
+        ):(
+          <p>Your list is empty</p>
+        )}
       </main>
   )
 }
@@ -55,7 +73,6 @@ export default Content
 //-----------------------------------------------------------------------------------------
 //click events in react:
 // import React from 'react'
-// import { useState } from 'react'
 // const Content = () => {
 //   function handleNameChange(){
 //       const names = ["Earn", "Grow", "Give"]
