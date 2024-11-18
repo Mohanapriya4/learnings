@@ -1,68 +1,17 @@
 import React from 'react'
-import { useState } from 'react'
-import { FaTrashAlt } from "react-icons/fa";
-const Content = () => {
-  const [items,setItems]=useState(
-    [
-      {
-        id:1,
-        checked:true,
-        item:"Playing cricket"
-      },
-      {
-        id:2,
-        checked:false,
-        item:"Playing chess"
-      },
-      {
-        id:3,
-        checked:false,
-        item:"Playing tabletennis"
-      }
-    ]
-  )
-  const handleCheckbox=(id)=>{
-    const newItemsArray = items.map((itemsparam)=>
-    itemsparam.id===id?
-    {...itemsparam,checked:!itemsparam.checked}:itemsparam)
-    setItems(newItemsArray)
-    console.log(id);
-  }
-  const handleDelete=(id)=>{
-    const newDeleteArray = items.filter((itemsparam1)=>(itemsparam1.id!==id))
-    setItems(newDeleteArray)
-  }
-  const handleDoubleTick=(id)=>{
-    const doubleClickTick = items.map((itemsparam2)=>
-      (itemsparam2.id===id?{...itemsparam2,checked:!itemsparam2.checked}:itemsparam2))
-    setItems(doubleClickTick)
-  }
+import Items from './Items'
+const Content = ({items,handleCheckbox,handleDelete,handleDoubleTick}) => {
+  
   
   return (
       <main>
         {(items.length)?(
-        <ul>
-        {items.map((items1)=>(
-          <li className="item" key={items1.id}>
-            <input 
-            type="checkbox"
-            onChange={()=>handleCheckbox(items1.id)}
-            checked={items1.checked}
-            />
-            <label 
-            onDoubleClick={()=>handleDoubleTick(items1.id)}
-            style={(items1.checked)?{textDecoration:'line-through'}:null}
-            >
-              {items1.item}
-            </label>
-            <FaTrashAlt 
-            role='button'
-            tabIndex={0}
-            onClick={()=>handleDelete(items1.id)}
-            />
-          </li>
-        ))}
-        </ul>
+         <Items
+         items={items}
+         handleCheckbox={handleCheckbox}
+         handleDelete={handleDelete}
+         handleDoubleTick={handleDoubleTick}
+         />
         ):(
           <p>Your list is empty</p>
         )}
