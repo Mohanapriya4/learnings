@@ -1,16 +1,21 @@
 import Header from './Components/Header';
 import Content from './Components/Content';
 import Footer from './Components/Footer';
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import Additem from './Components/Additem';
 import Searchitem from './Components/Searchitem';
 
 
 function App() {
-  const [items,setItems]=useState(JSON.parse(localStorage.getItem('Todo_List')))
+  const API_URL = 'http://localhost:3500/items'
+  const [items,setItems]=useState([] )
 
   const [newItem,setNewItem]=useState('')
   const [search,setSearch]=useState('')
+
+  useEffect(()=>{
+    JSON.parse(localStorage.getItem('Todo_List'))
+  },[])
 
   const addNewItem =(item)=>{
     const id = items.length?items[items.length-1].id + 1 : 1;
