@@ -4,7 +4,7 @@ const Content = ({items,handleCheckbox,handleDelete,handleDoubleTick}) => {
   
   
   return (
-      <main>
+      <>
         {(items.length)?(
          <Items
          items={items}
@@ -15,7 +15,7 @@ const Content = ({items,handleCheckbox,handleDelete,handleDoubleTick}) => {
         ):(
           <p>Your list is empty</p>
         )}
-      </main>
+      </>
   )
 }
 export default Content
