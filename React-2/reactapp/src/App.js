@@ -8,6 +8,9 @@ import Nav from './Components/Nav';
 import NewPost from './Components/NewPost';
 import PostPage from './Components/PostPage';
 import Post from './Components/Post';
+import PostLayout from './Components/PostLayout';
+
+
 
 
 function App() {
@@ -25,8 +28,12 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/newpost' element={<NewPost />}/>
-        <Route path='/postpage' element={<PostPage />}/>
-        <Route path='/postpage/:id' element={<Post />}/>
+        <Route path='/postpage' element={<PostLayout />} >
+        <Route index element={<PostPage />}/>
+        <Route path=':id' element={<Post />}/>
+        <Route path='newpost' element={<NewPost />}/>
+        </Route>
+        <Route path='*' element={<Missing />}/>
       </Routes>
       {/* <Header />
       <Nav />
