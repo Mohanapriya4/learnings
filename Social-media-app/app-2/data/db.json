@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "My First Post",
+      "datetime": "July 04, 2003 10:07:30 AM",
+      "body": "Made a video about designing"
+    },
+    {
+      "id": 2,
+      "title": "My Second Post",
+      "datetime": "December 13, 2013 11:35:07 PM",
+      "body": "Made an impact video about cancer"
+    },
+    {
+      "id": 3,
+      "title": "My Third Post",
+      "datetime": "April 02, 2023 09:30:30 AM",
+      "body": "Attended a welfare community"
+    },
+    {
+      "id": 4,
+      "title": "My Fourth Post",
+      "datetime": "November 23, 2024 1:05:42 AM",
+      "body": "Attended how to overcome depression eventtt"
+    },
+    {
+      "id": 5,
+      "title": "My fifth post",
+      "datetime": "November 23, 2024 1:11:20 AM",
+      "body": "hellooo"
+    }
+  ]
+}
