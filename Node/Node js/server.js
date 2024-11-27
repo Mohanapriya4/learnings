@@ -1,3 +1,30 @@
+const http = require('http')
+const PORT = 3000;
+const fs = require('fs')
+
+const server = http.createServer((req,res)=>{
+    res.writeHead(200,{'content-type':'text/html'})
+    fs.readFile('index.html',(err,data)=>{
+        if (err){
+            res.writeHead(404)
+            res.write('Page not found')
+        }else{ 
+            res.write(data)
+        }
+        res.end()
+    })
+})
+server.listen(PORT,err=>{
+    if(err)
+        console.log(err);
+    else{
+        console.log(`server is running at port ${PORT}`);
+        
+    }
+        
+})
+
+//-------------------------------------------------------------------------------
 //call back hell this should not done instead use async
 // fs.writeFile(path.join(__dirname,'file','code.txt'),'Code hard! Life is never easy!',err=>{
 //     if(err) throw err;

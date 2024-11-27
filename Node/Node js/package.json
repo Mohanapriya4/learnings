@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev":"nodemon index"
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   "homepage": "https://github.com/Mohanapriya4/learnings#readme",
   "description": "",
   "dependencies": {
-    "date-fns": "^4.1.0"
+    "date-fns": "^4.1.0",
+    "uuid": "^11.0.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
