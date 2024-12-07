@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .click-btn{
+        @apply bg-green-400 p-4 m-3 text-xl border-2 border-black rounded
+    }
+}
